@@ -1,0 +1,19 @@
+function guessNumber(){
+
+  // Get a random number
+  let random = Math.floor(Math.random() * 10) + 1;
+
+  // Get a Use number
+  let guest = parseInt(prompt("Guess a number between 1 and 10"));
+
+  if (guest === random)
+  {
+    console.log("Good Work");
+  }
+  else
+  {
+    console.log("Not matched");
+  }
+}
+
+guessNumber();

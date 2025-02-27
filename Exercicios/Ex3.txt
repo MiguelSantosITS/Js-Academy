@@ -1,0 +1,20 @@
+function getCurrentDay(){
+
+let date = new Date();
+
+//Get Day, Month, Year
+let day = date.getDate();
+let month = date.getMonth() + 1; 
+let year = date.getFullYear();
+
+// Output date dd/mm/yyyy
+console.log(`${day}/${month}/${year}`);
+// Output date dd-mm-yyy
+console.log(`${day}-${month}-${year}`);
+// Output date mm/dd/yyyy
+console.log(`${month}/${day}/${year}`);
+// Output date mm-dd-yyyy
+console.log(`${month}-${day}-${year}`);
+}
+
+getCurrentDay();

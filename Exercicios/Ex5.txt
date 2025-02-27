@@ -1,0 +1,17 @@
+function rotateString(){
+
+  let string = 'w3resource';
+  let array = string.split("");
+  // Testing array to string
+  console.log(array);
+  
+  // Set an interval of 500 ms
+  setInterval(() => {
+    let lastchar = array.pop();
+    array.unshift(lastchar);
+    console.log(array.join(""));
+  },500);
+  
+}
+
+rotateString();

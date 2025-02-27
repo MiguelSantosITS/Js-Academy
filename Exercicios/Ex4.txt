@@ -1,0 +1,15 @@
+function areaofTriangle(){
+
+const side1 = 5;
+const side2 = 6;
+const side3 = 7;
+  
+  // Calcutele the area of the triangle using Heron Method
+  let perimeter = (side1 + side2 + side3) / 2;
+  
+  let area = Math.sqrt(perimeter * (perimeter - side1) * (perimeter - side2) * (perimeter - side3));
+  
+console.log(area);
+}
+
+areaofTriangle();

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <h4>Ex 1 - Display current day and time</h4>
+    <h5 id="ex1info"></h5>
+    <button onclick="currentDayandTime()">Press</button>
+    <hr />
+
+    <h4>Ex 2 - Print current window contents</h4>
+    <button onclick="printContent()">Press</button>
+    <hr />
+
+    <h4>Ex 3 - Get current date in various formats</h4>
+    <h5 id="ex3info"></h5>
+    <button onclick="getCurrentDay()">Press</button>
+    <hr />
+
+    <h4>Ex 4 - Calculate area of triangle (sides:5, 6, 7)</h4>
+    <h5 id="ex4info"></h5>
+    <button onclick="areaofTriangle()">Press</button>
+    <hr />
+
+    <h4>Ex 5 - Rotate string 'w3resource' periodically</h4>
+    <h5 id="rotate"></h5>
+    <button id="ex5btnStart" onclick="rotateString()">Start</button>
+    <button id="ex5btnStop" onclick="stopRotateString()">Stop</button>
+    <hr />
+
+    <h4>Ex 6 - check leap year (gregorian calendar)</h4>
+    <h5 id="ex6info"></h5>
+    <button onclick="checkLeapYear()">Press</button>
+    <hr />
+
+    <h4>Ex 7 - Find years when Jan 1 is sunday (2014?2050)</h4>
+    <h5 id="ex7info"></h5>
+    <button onclick="find1Sunday()">Press</button>
+    <hr />
+
+    <h4>Ex 8 - Random integer guess game</h4>
+    <label>Guess a number between 1 and 10:</label>
+    <input type="number" id="numEx8" />
+    <h5 id="ex8info"></h5>
+    <button id="ex8btn" onclick="guessNumber()">Start</button>
+    <hr />
+
+    <h4>Ex 9 - Days left before christmas</h4>
+    <h5 id="ex9info"></h5>
+    <h5 id="ex9.1info"></h5>
+    <h5 id="ex9.2info"></h5>
+    <button onclick="daystoChristmas()">Press</button>
+    <hr />
+
+    <h4>Ex 10 - Multiplication and Division</h4>
+
+    <form>
+      <label> Enter 1st number :</label>
+      <input type="number" id="number1" />
+
+      <br /><br />
+
+      <label> Enter 2nd number:</label>
+      <input type="number" id="number2" />
+
+      <br /><br />
+
+      <input type="button" onClick="multiply()" value="Multiply" />
+      <input type="button" onClick="divide()" value="Divide" />
+
+      <br />
+    </form>
+    <p>
+      The result is:
+      <span id="result10"></span>
+    </p>
+    <hr />
+
+    <h4>Ex 11 - Calculate Temperature</h4>
+    <form>
+      <label> Enter the Temperature:</label>
+      <input type="number" id="Temp" />
+      <br /><br />
+      <input type="button" onClick="celsius()" value="ºF -> ºC" />
+      <input type="button" onClick="fahrenheit()" value="ºC -> ºF" />
+      <br />
+    </form>
+    <p>
+      The Temperature is:
+      <span id="result11"></span>
+    </p>
+    <hr />
+
+    <h4>Ex 12 - Get current website URL</h4>
+    <h5 id="ex12info"></h5>
+    <button onclick="getCurrentURL()">Press</button>
+    <hr />
+
+    <h4>Ex 13 - Create variable with user-defined name</h4>
+    <h5 id="ex13info"></h5>
+    <button onclick="createVar()">Press</button>
+    <hr />
+
+    <h4>Ex 14 - Get file extension of filename</h4>
+    <label>Insert the filename:</label>
+    <input type="text" id="textEx14" />
+    <h5 id="ex14info"></h5>
+    <button onclick="fileextension()">Press</button>
+    <hr />
+
+    <h4>Ex 15 - Difference Between Number and 13</h4>
+    <label>Insert a number:</label>
+    <input type="number" id="numEx15" />
+    <h5 id="ex15info"></h5>
+    <button onclick="diffBetween13()">Calculate</button>
+    <hr />
+
+    <h4>Ex 16 - Sum Two Integers (Triple if Equal)</h4>
+    <label>Insert the 1st number :</label>
+    <input type="number" id="numEx16.1" />
+    <br /><br />
+    <label>Insert the 2nd number:</label>
+    <input type="number" id="numEx16.2" />
+    <h5 id="ex16info"></h5>
+    <button onclick="SumTwoInt()">Calculate</button>
+    <hr />
+
+    <h4>Ex 17 - Difference Between Number and 19 (Triple if >19)</h4>
+    <label>Insert a number:</label>
+    <input type="number" id="numEx17" />
+    <h5 id="ex17info"></h5>
+    <button onclick="diffBetween19()">Calculate</button>
+    <hr />
+
+    <h4>Ex 18 - Check if number or sum is 50</h4>
+    <label>Insert the 1st number :</label>
+    <input type="number" id="numEx18.1" />
+    <br /><br />
+    <label>Insert the 2nd number:</label>
+    <input type="number" id="numEx18.2" />
+    <h5 id="ex18info"></h5>
+    <button onclick="sumTwoInt()">Check</button>
+    <hr />
+
+    <h4>Ex 19 - Check if integer is within 20 of 100 or 400</h4>
+    <label>Insert a number:</label>
+    <input type="number" id="numEx19" />
+    <h5 id="ex19info"></h5>
+    <button onclick="CheckInteger()">Calculate</button>
+    <hr />
+
+    <h4>Ex 20 - Check if one integer is positive and one is negative</h4>
+    <label>Insert the 1st number :</label>
+    <input type="number" id="numEx20.1" />
+    <br /><br />
+    <label>Insert the 2nd number:</label>
+    <input type="number" id="numEx20.2" />
+    <h5 id="ex20info"></h5>
+    <button onclick="checkIntPosorNeg()">Check</button>
+    <hr />
+
+    <script src="index.js"></script>
+  </body>
+</html>
