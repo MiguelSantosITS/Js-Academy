@@ -2,4 +2,6 @@
 
 Academia de JS
 
-bananas com nutela
+bananas
+
+Morangos com Açucar
