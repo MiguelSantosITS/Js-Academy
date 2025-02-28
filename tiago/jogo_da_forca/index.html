@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title>
+    <style>
+      #game-container {
+        display: none;
+      }
+      #body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <button id="play-button" onclick="gameOn()">Novo jogo</button>
+    <div id="game-container">
+      <div id="final-message"></div>
+      <div id="lives"></div>
+      <div id="word"></div>
+      <div>
+        <h2>Letras erradas:</h2>
+        <ul id="wrong-letters"></ul>
+      </div>
+      <section id="alphabet">
+        <button id="A" onclick="guessLetter('A')">A</button>
+        <button id="B" onclick="guessLetter('B')">B</button>
+        <button id="C" onclick="guessLetter('C')">C</button>
+        <button id="D" onclick="guessLetter('D')">D</button>
+        <button id="E" onclick="guessLetter('E')">E</button>
+        <button id="F" onclick="guessLetter('F')">F</button>
+        <button id="G" onclick="guessLetter('G')">G</button>
+        <button id="H" onclick="guessLetter('H')">H</button>
+        <button id="I" onclick="guessLetter('I')">I</button>
+        <button id="J" onclick="guessLetter('J')">J</button>
+        <button id="K" onclick="guessLetter('K')">K</button>
+        <button id="L" onclick="guessLetter('L')">L</button>
+        <button id="M" onclick="guessLetter('M')">M</button>
+        <button id="N" onclick="guessLetter('N')">N</button>
+        <button id="O" onclick="guessLetter('O')">O</button>
+        <button id="P" onclick="guessLetter('P')">P</button>
+        <button id="Q" onclick="guessLetter('Q')">Q</button>
+        <button id="R" onclick="guessLetter('R')">R</button>
+        <button id="S" onclick="guessLetter('S')">S</button>
+        <button id="T" onclick="guessLetter('T')">T</button>
+        <button id="U" onclick="guessLetter('U')">U</button>
+        <button id="V" onclick="guessLetter('V')">V</button>
+        <button id="W" onclick="guessLetter('W')">W</button>
+        <button id="X" onclick="guessLetter('X')">X</button>
+        <button id="Y" onclick="guessLetter('Y')">Y</button>
+        <button id="Z" onclick="guessLetter('Z')">Z</button>
+      </section>
+    </div>
+  </body>
+</html>
