@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=chrome">
+		<title >All exercises</title>
+
+		<link rel="stylesheet" href="styles.css"></link>
+	</head>
+	
+	<body onload="animateTitles()">
+		<div>
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-6.php" id="title6" class="title" target="_blank"> 
+				<pre >Exercice 6</pre>
+			</a>
+			<input type="text" id="userInput" placeholder="Enter a Year">
+				<button  onclick="checkLeapYear(userInput)"> check </button>
+				<pre id="LeapYear_output"></pre>
+			</input>
+		</div>
+		
+		<div >
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-7.php" id="title7" class="title" target="_blank"> 
+				<pre >Exercice 7</pre>
+			</a>
+			<p ></p>
+			<button onclick="checkJanFirst()"> Check January 1st </button>
+			<pre id="JanFirst_output"></pre>
+			
+		</div>
+		
+		<div >
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-8.php" id="title8" class="title" target="_blank"> 
+				<pre >Exercice 8</pre>
+			</a>
+			<input type="text" id="numberInput" placeholder="Guess a number between 1-10">
+				<button onclick="randomNumber()">Guess!</button>
+				<pre id="randNumber_output"></pre>
+			</input>
+		</div>
+
+		<div >
+			<a href="https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-9.php" id="title9" class="title" target="_blank"> 
+				<pre >Exercice 9</pre>
+			</a>
+			<p ></p>
+			<button onclick="countDaysToChristmas()">Count Days Before Christmas</button>
+			<pre id="daysTillChristmas_output"></pre>
+		</div>
+
+	<script src="utils.js"></script>
+
+	<script src="5_rotateString.js"></script>	
+	<script src="6_checkLeapYear.js"></script>
+	<script src="7_findJan1.js"></script>
+	<script src="8_GuessRandomNumber.js"></script>
+	<script src="9_daysBeforeChristmas.js"></script>
+
+	</body>
+</html>

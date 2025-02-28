@@ -1,0 +1,4 @@
+
+function printWindowOnClick(){
+    window.print()
+}
