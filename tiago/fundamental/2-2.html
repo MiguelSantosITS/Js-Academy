@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 2.2 - W3Resource (Javascript)</title>
+  </head>
+  <body>
+    <script src="2-2.js"></script>
+  </body>
+
+  <h4>Ex1</h4>
+  <input type="button" onclick="ex1()" value="Run" />
+  <div id="match"></div>
+  <hr />
+
+  <h4>Ex3</h4>
+  <input type="text" id="csvTo2D" /><br />
+  <input type="button" onclick="ex3()" value="Run" /><br />
+  <ul id="2Darray"></ul>
+  <hr />
+
+  <h4>Ex5</h4>
+  <ul>
+    Array used as example (consider an array of objects):
+    <li>[x:100, y:200], [x:300, y:400], [x:6], [y:7]</li>
+  </ul>
+  <ul id="variables">
+    <input type="checkbox" id="x" />x<br />
+    <input type="checkbox" id="y" />y<br />
+    <input type="checkbox" id="z" />z<br />
+  </ul>
+  <input type="button" onclick="ex5()" value="Run" /><br />
+  <div id="csv"></div>
+  <hr />
+
+  <h4>Ex6</h4>
+  <div></div>
+    Object used as example:<br />
+    [level1:100, level2:200, level3: 300]
+  </div>
+  <input
+    type="text"
+    id="key"
+    placeholder="Please insert a key to be searched in object"
+  /><br />
+  <input type="button" onclick="ex6()" value="Run" /><br />
+  <div id="value"></div>
+  <hr />
+
+  <h4>Ex128</h4>
+  <div>
+    <input type="number" id="toBeConvertedToCurrency" placeholder="Please input a valid number"/>
+    <select id="currencies">
+      <option>€ EUR</option>
+      <option>$ USD</option>
+      <option>£ GBP</option>
+      <option>¥ JPY</option>
+    </select>
+  </div>
+  <button onclick="ex128()">Run</button>
+  <div id="converted"></div>
+</html>
